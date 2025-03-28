@@ -1,29 +1,18 @@
-A modern, animated e-commerce cart application built with React.js, featuring smooth animations and interactive UI elements powered by Framer Motion and AOS (Animate On Scroll).
+A responsive and interactive e-commerce shopping cart built with HTML, CSS, and JavaScript. This project includes features like adding/removing items, quantity adjustments, and a dynamic checkout system.
 
-✨ Features
--Interactive Product Cart with add/remove functionality
+Features ✨
+✔ Add/Remove Items – Dynamically update the cart.
+✔ Quantity Adjustment – Increase/decrease product quantities.
+✔ Real-time Price Calculation – Automatically updates total cost.
+✔ Responsive Design – Works on mobile, tablet, and desktop.
+✔ Local Storage – Saves cart items for persistence.
+✔ Smooth Animations – CSS transitions for a better user experience.
 
--Smooth Animations using Framer Motion
+Technologies Used 🛠️
+-HTML5 – Structure of the web app.
 
--Scroll-triggered animations with AOS
+-CSS3 – Styling and animations.
 
--Responsive Design for all devices
+-JavaScript (ES6+) – Dynamic cart functionality.
 
--State Management with React Context API
-
--Modern UI with clean, intuitive interface
-
-✨ Technologies Used 🛠️
--React.js - JavaScript library for building user interfaces
-
--Framer Motion - Production-ready animation library for React
-
--AOS (Animate On Scroll) - CSS animation library for scroll-triggered effects
-
--React Icons - Popular icons for React applications
-
--CSS Modules - For scoped styling
-
--TailwindCSS for best styling for components
-
--React Hooks - For state and lifecycle management
+-Local Storage – Persist cart data between sessions.
