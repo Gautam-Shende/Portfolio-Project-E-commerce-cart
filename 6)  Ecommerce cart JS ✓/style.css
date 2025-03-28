@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 1.6rem;
+    color: #ff5733;
+    font-weight: 600;
+    margin-left: 10px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+nav a:hover {
+    color: #ff5733;
+}
+
+.cart-icon ion-icon {
+    font-size: 2.5rem;
+    transition: .2s ;
+}
+.cart-icon ion-icon:hover {
+    color: #ff5733;
+}
+
+header .cart-count {
+    background-color: #ff0000;
+    position: relative;
+    right: 30%;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-section .btn-primary {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+    transition: .3s ease;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #ff1120;
+    transform: scale(1.02);
+}
+
+/* Products Section */
+.products-section {
+    background-color: aliceblue;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px 20px;
+}
+
+.product-card {
+   border: none;
+   border-radius: 10px;
+   box-shadow: 0 2px 10px #aaa;
+   padding: 20px 20px;
+   flex-grow: 1;
+}
+
+.product-card h3 {
+    font-size: 1.4rem;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    color: #777;
+    margin: 10px 5px;
+}
+
+.product-card img {
+    width: 100%;
+    box-shadow: 0 2px 10px #aaa;
+    border-radius: 10px;
+}
+
+.product-card .btn-secondary {
+    background-color: #444;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.product-card .btn-secondary:hover{
+    background-color: #000;
+    transform: scale(1.02);
+}
+
+/*========= Cart Section =============*/
+.cart-section {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: 100vh auto;
+    padding-bottom: 20px;
+}
+.cart-section h2 {
+    font-size: 2rem;
+    color: #ff5733;
+    padding: 10px;
+}
+
+.cart-section p {
+    font-size: 1.1rem;
+}
+.cart-section .box {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
+    height: 100vh auto;
+}
+
+.cart-section .box img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.cart-section .box p {
+    font-size: 20px;
+    font-weight: 600;
+    margin:10px;
+}
+
+.cart-section .box button {
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ff5733;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+#buyNowBtn {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+#buyNowBtn:hover {
+    background-color: #ff1120;
+    transform: scale(1.02);
+}
+
+.cart-section .cart-total {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.contact-section form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-section button {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #ff1120;
+    transform: scale(1.01);
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* Small devices (mobile phones) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-section {
+        padding: 10px;
+        background-position: center;
+    }
+
+    .products-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .product-card img {
+        width: 100%;
+    }
+
+    .cart-section .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart-section .box img {
+        width: 100%;
+    }
+    
+    .contact-section form {
+        width: 90%;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    nav {
+        gap: 15px;
+    }
+
+    .products-container {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .product-card {
+        flex-grow: 0;
+        width: 45%;
+    }
+
+    .cart-section .box {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contact-section form {
+        width: 80%;
+    }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 1025px) {
+    .products-container {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .product-card {
+        width: 30%;
+    }
+
+    .cart-section .box {
+        justify-content: space-between;
+    }
+
+    .contact-section form {
+        width: 50%;
+    }
+}

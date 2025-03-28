@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyShop</div>
+        <nav>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+
+                <div id="cart" class="cart-icon">
+                    <a href="#about"><ion-icon name="cart-outline"></ion-icon></a>
+                    <span class="cart-count">0</span>
+                </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to MyShop</h1>
+            <p>Your one-stop shop for all your needs!</p>
+            <a href="#products" class="btn-primary">
+                <ion-icon name="bag-outline"></ion-icon>
+                Shop Now
+            </a>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>Featured Products</h2>
+        <div class="products-container">
+            <!-- Product Cards -->
+            <div class="product-card">
+                <img src="img/Perfume.jpg" alt="Product 1">
+                <h3>Perfume</h3>
+                <p>$49.99</p>
+                <button class="btn-secondary">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/Headphones.jpg" alt="Product 2">
+                <h3>Headphones</h3>
+                <p>$29.99</p>
+                <button class="btn-secondary">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/Tsirt.jpg" alt="Product 2">
+                <h3>Cool T-sirt</h3>
+                <p>$39.99</p>
+                <button class="btn-secondary">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/Toys.jpg" alt="Product 2">
+                <h3>Kids Toys</h3>
+                <p>$19.99</p>
+                <button class="btn-secondary">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/Shoes.jpg" alt="Product 2">
+                <h3>Shoes</h3>
+                <p>$9.99</p>
+                <button class="btn-secondary">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/shampoo.jpg" alt="Product 2">
+                <h3>Hair Shampoo</h3>
+                <p>$5.99</p>
+                <button class="btn-secondary">Add to Cart</button>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </section>
+
+    <section id="about" class="cart-section">
+        <h2>Your Cart</h2>
+        <p>Manage your Products list, and Buy it .</p>
+        <div class="box">
+            <!-- selected cart display herer-->
+        </div>
+        <p class="cart-total"></p>
+        <!-- <button class="buynow">Buy Now</button> -->
+        <button id="buyNowBtn" class="btn-primary" style="display: none;" onclick="buyNow()">Buy Now</button>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MyShop. All Rights Reserved.</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
